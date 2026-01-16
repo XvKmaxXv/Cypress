@@ -1,0 +1,28 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy.html": "cypress run --browser chrome --config-file config-dev.js",
+    "cy.junit": "cypress run --reporter junit --reporter-options \"mochaFile=cypress/reports/junit/results-[hash].xml\"",
+    "cy:web:open": "cypress open --browser chrome --config-file config-dev.js",
+    "cy:web:run": "cypress run --browser chrome --spec \"cypress/e2e/web/**/*.cy.js\" --config-file config-dev.js",
+    "cy:api:run": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\" --config-file config-dev.js" ,
+    "cy:api:runAll": "cypress run  --config-file config-dev.js" ,
+    
+    
+    "cy.open": "npx cypress open --browser chrome",
+    "cy.open:dev": "cypress open --config-file config-dev.js --browser chrome",
+    "cy.open:qa": "cypress open --config-file config-qa.js --browser chrome",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^15.9.0",
+    "cypress-mochawesome-reporter": "^3.8.4",
+    "dotenv": "^17.2.3"
+  }
+}

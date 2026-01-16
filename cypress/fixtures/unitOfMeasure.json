@@ -1,0 +1,22 @@
+{
+    "valid": {
+      "unit_of_measure_code": "KDG",
+      "unit_of_measure_name": "KDGuilograma",
+      "is_weight": "S",
+      "unit_of_measure_web_name": "Kg"
+    },
+
+    "update": {
+      "unit_of_measure_code": "KDD",
+      "unit_of_measure_name": "KDGuilograma - Alterado",
+      "is_weight": "S",
+      "unit_of_measure_web_name": "Kg"
+    },
+
+    "invalid": {
+      "unit_of_measure_code": "",
+      "unit_of_measure_name": "",
+      "is_weight": "X",
+      "unit_of_measure_web_name": ""
+    }
+  }
