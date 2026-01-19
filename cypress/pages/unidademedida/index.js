@@ -6,14 +6,17 @@ class unityofmeasure {
         cy.contains('a', el.desc_tela).should('have.attr', 'href', '/units-of-measure').click()
     }
 
-    pesquisaNome() {
-        cy.get(el.placeholder_pesquisar).type(el.nome_pesquisa)
+    pesquisaNome(itemName) {
+        cy.get(el.placeholder_pesquisar).type(itemName)
     }
-    
 
+    limpaTeste(itemName) {
+        cy.get(`input[value="${itemName}"]`).clear()
+    }
 
-
+    contemValor(itemName) {
+        cy.contains(itemName).should('be.visible')
+    }
 }
 
-
-export default new UnityMeasure()
+export default new unityofmeasure()

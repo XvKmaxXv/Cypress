@@ -13,26 +13,32 @@ describe('Paises', ()=> {
     it('Pesquisar Algo Descricao' , () => {
         //Arrange
         logindatamais.verificaUrlHome()
-        unidademedida.
+        unidademedida.acessarUnidadeMedia()
 
         //Act
-        country.pesquisaNome()
+        unidademedida.pesquisaNome('UNIDADE TESTE')
         //Assert
-        cy.contains('BRASIL').should('be.visible')
-        cy.get('input[value="Brasil"]').clear()
+        unidademedida.contemValor('UNIDADE TESTE')
+        unidademedida.limpaTeste('UNIDADE TESTE')
+        
+        
     })    
 
     it('Pesquisar Algo Codigo' , () => {
         //Arrange
-        cy.visit('https://datamais.bluelogic.com.br/home')
-        cy.contains('a', 'Cadastro de Unidades de Medida').should('have.attr', 'href', '/units-of-measure').click()
+        logindatamais.verificaUrlHome()
+        unidademedida.acessarUnidadeMedia()
         //Act
+        
         cy.get('[role="combobox"]').click()
-        cy.contains('[role="option"]', 'Código').click()
-        cy.get('input[placeholder="Pesquisar"]').type('1058')
+        cy.contains('[role="option"]', 'Sigla').click()
+        unidademedida.pesquisaNome('UN')
+        //cy.get('input[placeholder="Pesquisar"]').type('UN')
         //Assert
-        cy.contains('BRASIL').should('be.visible')
-        cy.get('input[value="1058"]').clear()
+        //cy.contains('UNIDADE TESTE').should('be.visible')
+        unidademedida.contemValor('UN')
+        unidademedida.limpaTeste('UN')
+        
     }) 
 
     it.skip('Cadastrar Novo Pais' , () => {

@@ -2,6 +2,7 @@
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
+cypress/reports/
 
 # Cypress cache
 .cypress/
@@ -23,3 +24,4 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
