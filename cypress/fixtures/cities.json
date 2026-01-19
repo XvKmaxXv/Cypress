@@ -1,0 +1,11 @@
+{
+    "valid": {
+    "state_id": 22 ,
+    "city_code": null,
+    "city_name": "TESTE DE CIDADES API"
+    }  ,
+    "update": {
+    "state_id": 20 ,
+    "city_name": "TESTE DE CIDADES API ALTERACAO"
+    }
+}

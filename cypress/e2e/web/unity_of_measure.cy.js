@@ -1,6 +1,6 @@
-import logindatamais from "../../pages/logindatamais"
-import unidademedida from "../../pages/unidademedida"
-describe('Paises', ()=> {
+import logindatamais from "../../pages/logindatamais/web"
+import unidademedida from "../../pages/unityofmeasure/web"
+describe('Unidade de Medida', ()=> {
 
     
     beforeEach(() =>{

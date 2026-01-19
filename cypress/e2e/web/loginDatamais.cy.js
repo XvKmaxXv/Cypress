@@ -1,4 +1,4 @@
-import Login from '../../pages/logindatamais'
+import Login from '../../pages/logindatamais/web'
 
 describe('Login', ()=> {
 

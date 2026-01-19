@@ -1,4 +1,4 @@
-import Login from '../../pages/login'
+import Login from '../../pages/login/web'
 import Inventory from '../../pages/invetory'
 
 describe('Login', ()=> {

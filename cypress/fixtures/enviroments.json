@@ -1,0 +1,23 @@
+{
+    "valid": {
+      "environment_code": null,
+      "environment_name": "Teste de Ambiente",
+      "is_reservation": "S",
+      "is_client_service": "S" ,
+      "is_preparation": "S"
+    },
+
+    "update": {
+        "environment_name": "Teste de Ambiente Alteracao",
+        "is_reservation": "N",
+        "is_client_service": "N" ,
+        "is_preparation": "N"
+    },
+
+    "invalid": {
+      "unit_of_measure_code": "",
+      "unit_of_measure_name": "",
+      "is_weight": "X",
+      "unit_of_measure_web_name": ""
+    }
+}

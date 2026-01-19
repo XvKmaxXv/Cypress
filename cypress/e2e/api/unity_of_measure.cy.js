@@ -1,4 +1,4 @@
-import UnidadeMedida from '../../pages/unityofmeasure'
+import UnidadeMedida from '../../pages/unityofmeasure/api'
 
 describe('Unidade de Medida', ()=> {
         

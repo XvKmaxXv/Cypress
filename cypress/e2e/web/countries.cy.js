@@ -1,22 +1,22 @@
-import logindatamais from "../../pages/logindatamais"
-import country from "../../pages/country"
+import Login from "../../pages/logindatamais/web"
+import Paises from "../../pages/countries/web"
 describe('Paises', ()=> {
 
     
     beforeEach(() =>{
         //Arrange
-        logindatamais.visitarPagina()
-        logindatamais.preencherCredenciaisValidas()
-        logindatamais.verificaUrlHome()
+        Login.visitarPagina()
+        Login.preencherCredenciaisValidas()
+        Login.verificaUrlHome()
     })
 
     it('Pesquisar Algo Nome' , () => {
         //Arrange
-        logindatamais.verificaUrlHome()
-        country.acessarPais()
+        Login.verificaUrlHome()
+        Paises.acessarPais()
 
         //Act
-        country.pesquisaNome()
+        Paises.pesquisaNome()
         //Assert
         cy.contains('BRASIL').should('be.visible')
         cy.get('input[value="Brasil"]').clear()

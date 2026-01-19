@@ -5,10 +5,10 @@
   "scripts": {
     "cy.html": "cypress run --browser chrome --config-file config-dev.js",
     "cy.junit": "cypress run --reporter junit --reporter-options \"mochaFile=cypress/reports/junit/results-[hash].xml\"",
-    "cy:web:open": "cypress open --browser chrome --config-file config-dev.js",
-    "cy:web:run": "cypress run --browser chrome --spec \"cypress/e2e/web/**/*.cy.js\" --config-file config-dev.js",
-    "cy:api:run": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\" --config-file config-dev.js" ,
-    "cy:api:runAll": "cypress run  --config-file config-dev.js" ,
+    "webopen": "cypress open --browser chrome --config-file config-dev.js",
+    "webrun": "cypress run --browser chrome --spec \"cypress/e2e/web/**/*.cy.js\" --config-file config-dev.js",
+    "apirun": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\" --config-file config-dev.js" ,
+    "runall": "cypress run  --config-file config-dev.js" ,
     
     
     "cy.open": "npx cypress open --browser chrome",

@@ -1,0 +1,28 @@
+{
+    "valid": {
+    "country_id": 30,
+    "state_code": null,
+    "state_name": "ESTADO DA API",
+    "uf_code": "EA",
+    "icms_percentage": 17.22,
+    "ipi_percentage": 17.22,
+    "pis_percentage": 17.22,
+    "cofins_percentage": 17.22,
+    "fcp_percentage": 17.22,
+    "icms_applicable_state_percentage": 17.22,
+    "fcp_st_percentage": 17.22
+    },
+    
+    "update": {
+    "country_id": 30,
+    "state_name": "ESTADO DA API ALTERACAO",
+    "uf_code": "AE",
+    "icms_percentage": 18.22,
+    "ipi_percentage": 18.22,
+    "pis_percentage": 18.22,
+    "cofins_percentage": 18.22,
+    "fcp_percentage": 18.22,
+    "icms_applicable_state_percentage": 18.22,
+    "fcp_st_percentage": 18.22
+    }
+}
